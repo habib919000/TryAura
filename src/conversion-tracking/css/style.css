@@ -1,0 +1,120 @@
+/* Conversion Tracking Specific Styles */
+
+:root {
+  --conversion-primary: #FFBCFE;
+}
+
+/* ── CONVERSION TRACKING THEME ── */
+.conversion-tracking-page .btn-demo {
+  background: var(--conversion-primary);
+}
+
+.conversion-tracking-page .hero-bg {
+  background-color: #ffffff;
+  background-image: radial-gradient(circle at 70% 30%, rgba(255, 188, 254, 0.2) 0%, transparent 70%);
+}
+
+.conversion-tracking-page .main-nav {
+  background-color: #ffffff;
+  background-image: radial-gradient(circle at 70% 30%, rgba(255, 188, 254, 0.2) 0%, transparent 70%);
+}
+
+.conversion-tracking-page .hero {
+  padding: 148px 5%;
+}
+
+.conversion-tracking-page .tab-btn.active {
+  background: var(--conversion-primary);
+  border-color: var(--conversion-primary);
+}
+
+.conversion-tracking-page .wf-icon-circle.yellow {
+  background: var(--conversion-primary);
+}
+
+.conversion-tracking-page .step-circle {
+  border-color: var(--conversion-primary);
+}
+
+.conversion-tracking-page .faq-item.open .faq-trigger h3 {
+  color: #D642D3; /* A slightly darker pink for contrast */
+}
+
+.conversion-tracking-page .faq-icon.minus::after {
+  background: var(--conversion-primary);
+}
+
+.conversion-tracking-page .feature-card-image svg {
+  color: var(--conversion-primary) !important;
+  opacity: 1 !important;
+}
+
+.conversion-tracking-page .hero-image svg,
+.conversion-tracking-page .tab-panel-image svg,
+.conversion-tracking-page .workflow-left-img svg {
+  color: var(--conversion-primary) !important;
+  opacity: 0.3 !important;
+}
+
+/* ── LOGO MARQUEE ── */
+.trusted-section {
+  padding: 60px 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.trusted-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.logo-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.logo-marquee-content {
+  display: flex;
+  gap: 80px;
+  white-space: nowrap;
+  animation: marquee 40s linear infinite;
+  padding-left: 80px;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.logo-item:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.logo-item img {
+  height: 32px;
+  width: auto;
+}
+
+.logo-item span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* You can add more page-specific overrides here */

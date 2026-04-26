@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TryAura – Unlimited Virtual Try-On for WooCommerce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/tryaura/css/style.css">
+</head>
+<body>
+
+<!-- ══ GLOBAL MENU ══ -->
+<div class="global-menu">
+  <div class="global-menu-home">
+    <img src="./src/img/Nav/Home.png" alt="Home" class="gm-icon">
+  </div>
+  <div class="global-menu-products">
+    <div class="gmp-item">
+      <img src="./src/img/Nav/StoreGrowth.png" alt="StoreGrowth" class="gm-icon">
+    </div>
+    <div class="gmp-item">
+      <img src="./src/img/Nav/CartPulse.png" alt="CartPulse" class="gm-icon">
+    </div>
+    <a href="conversion-tracking.html" class="gmp-item">
+      <img src="./src/img/Nav/Conversion Tracking.png" alt="Conversion Tracking" class="gm-icon">
+    </a>
+    <div class="gmp-item">
+      <img src="./src/img/Nav/Texty.png" alt="Texty" class="gm-icon">
+    </div>
+    <a href="index.html" class="gmp-item active">
+      <img src="./src/img/Nav/TryAura.png" alt="TryAura" class="gm-icon">
+    </a>
+    <div class="gmp-item">
+      <img src="./src/img/Nav/Cart Pilot.png" alt="Cart Pilot" class="gm-icon">
+    </div>
+  </div>
+</div>
+
+<!-- ══ MAIN NAV ══ -->
+<nav class="main-nav">
+  <div class="nav-logo">
+    <img src="./src/img/tryaura-logo.svg" alt="TryAura Logo" class="logo-img">
+  </div>
+  <div class="nav-links">
+    <a href="#">Products <span class="nav-chevron"></span></a>
+    <a href="#">Blog</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <div class="nav-actions">
+    <span class="nav-login">Login</span>
+    <button class="btn-account">My Account</button>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-text-top">
+        <h1 class="hero-h1">Unlimited Virtual Try-On and Product Visuals for WooCommerce</h1>
+        <p class="hero-p">Upgrade your WooCommerce product photos and let shoppers try products on before buying. Create unlimited AI visuals using your own Gemini key, without per-image fees.</p>
+      </div>
+      <div class="hero-ctas">
+        <button class="btn-demo">Try Demo</button>
+        <a class="btn-text-link" href="#">
+          Pricing Plans
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-up-right-svg">
+            <path d="M5.83333 14.1667L14.1667 5.83333" stroke="#0E0E0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5.83333 5.83333H14.1667V14.1667" stroke="#0E0E0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="./src/tryaura/img/hero.png" alt="TryAura Virtual Try-On Demo" class="hero-img-file">
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHAT YOU CAN DO ══ -->
+<section class="what-section">
+  <div class="section-heading" style="max-width:740px;">
+    <h2>What You Can Do With TryAura</h2>
+    <p style="max-width:532px;">Explore the different ways store owners use TryAura to present products more clearly.</p>
+  </div>
+
+  <div style="width:100%;display:flex;flex-direction:column;gap:56px;">
+    <div class="tabs-row" style="align-self:center;">
+      <button class="tab-btn" onclick="switchTab(0,this)">Try On Clothing</button>
+      <button class="tab-btn active" onclick="switchTab(1,this)">Try On Accessories</button>
+      <button class="tab-btn" onclick="switchTab(2,this)">Product in Hand</button>
+      <button class="tab-btn" onclick="switchTab(3,this)">Change Model</button>
+      <button class="tab-btn" onclick="switchTab(4,this)">Change Background</button>
+      <button class="tab-btn" onclick="switchTab(5,this)">Product Videos</button>
+    </div>
+
+    <div class="tab-panel">
+      <div class="tab-panel-text">
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <h3>Try On Accessories</h3>
+          <p>Show how accessories like glasses, watches, or jewelry look when worn, without needing new photoshoots.</p>
+        </div>
+        <button class="btn-demo">Try Demo</button>
+      </div>
+      <div class="tab-panel-image">
+        <img src="./src/tryaura/img/Try On Accessories.png" alt="Try On Accessories" class="tab-img-file">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SHOW PRODUCTS CLEARLY ══ -->
+<section class="features-section">
+  <div class="section-heading" style="max-width:740px;">
+    <h2>Show Products Clearly. Sell With Confidence.</h2>
+    <p>No photoshoots. No editing. Just a few clicks to turn simple product images into realistic visuals and try-on experiences.</p>
+  </div>
+
+  <div style="width:100%;max-width:1200px;">
+    <div class="features-row">
+      <div class="feature-card">
+        <div class="feature-card-image">
+          <img src="./src/tryaura/img/Studio-Quality Images Without.png" alt="Studio-Quality Images" class="feature-img-file">
+        </div>
+        <div class="feature-card-text">
+          <h3>Clean, Studio-Quality Images Without Reshoots</h3>
+          <p>Elevate your product photography by transforming standard images into captivating visuals that radiate professionalism and allure.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-image">
+          <img src="./src/tryaura/img/Bring Products.png" alt="Bring Products to Life" class="feature-img-file">
+        </div>
+        <div class="feature-card-text">
+          <h3>Bring Products To Life With Videos</h3>
+          <p>Showcase the fit, fluidity, and fine details that static images often miss, providing customers with a thorough understanding of the product.</p>
+        </div>
+      </div>
+    </div>
+    <div class="features-row">
+      <div class="feature-card">
+        <div class="feature-card-image">
+          <img src="./src/tryaura/img/Let Shoppers Try On Virtually.png" alt="Virtual Try-On" class="feature-img-file">
+        </div>
+        <div class="feature-card-text">
+          <h3>Let Shoppers Try On Virtually</h3>
+          <p>Help customers visualize the product before buying, boosting their confidence in the decision. A clear image ensures they feel secure and happy with their choice.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-image">
+          <img src="./src/tryaura/img/Unlimited, Without Limits.png" alt="Unlimited Without Limits" class="feature-img-file">
+        </div>
+        <div class="feature-card-text">
+          <h3>Unlimited, Without Limits</h3>
+          <p>Create an unlimited selection of images, videos, and virtual try-on experiences using your exclusive Gemini key—no restrictions, no image costs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ctas-row">
+    <button class="btn-demo">Try Demo</button>
+    <a class="btn-text-link" href="#">
+      Pricing Plans
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="arrow-up-right-svg">
+        <path d="M5.83333 14.1667L14.1667 5.83333" stroke="#0E0E0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.83333 5.83333H14.1667V14.1667" stroke="#0E0E0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- ══ FITS NATIVELY IN YOUR WORKFLOW ══ -->
+<section class="workflow-section">
+  <div class="section-heading" style="max-width:852px;">
+    <h2>Fits Natively In Your Workflow</h2>
+    <p>TryAura works right inside your Product Editor and Media Library. Add visuals the same way you add images to any product or post.</p>
+  </div>
+
+  <div class="workflow-inner">
+    <div class="workflow-left">
+      <div class="workflow-left-img">
+        <img src="./src/tryaura/img/Add product videos directly to product galleries.png" alt="Add product videos" class="workflow-img-file">
+      </div>
+      <div class="workflow-left-content">
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <h3>Add product videos directly to product galleries</h3>
+          <p>Add videos directly to product galleries so shoppers can see how products look, move, or fit before buying.</p>
+        </div>
+        <div class="ctas-row">
+          <button class="btn-demo">Try Demo</button>
+          <a class="btn-text-link" href="#">
+            Pricing Plans
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="arrow-up-right-svg">
+              <path d="M5.83333 14.1667L14.1667 5.83333" stroke="#0E0E0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.83333 5.83333H14.1667V14.1667" stroke="#0E0E0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="workflow-right">
+      <!-- Feature rows -->
+      <div class="workflow-feature-item">
+        <div class="wf-icon-wrap">
+          <div class="wf-icon-circle yellow"></div>
+          <div class="wf-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0E0E0F" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M10 10l5-3-5-3v6z" fill="#0E0E0F" stroke="none"/></svg>
+          </div>
+        </div>
+        <div class="wf-text">
+          <h4>Add product videos directly to product galleries</h4>
+          <p>Add videos directly to product galleries so shoppers can see how products look, move, or fit before buying.</p>
+        </div>
+      </div>
+      <div class="workflow-feature-item">
+        <div class="wf-icon-wrap">
+          <div class="wf-icon-circle outline"></div>
+          <div class="wf-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0E0E0F" stroke-width="1.5"><ellipse cx="12" cy="12" rx="10" ry="6"/><circle cx="12" cy="12" r="2.5"/></svg>
+          </div>
+        </div>
+        <div class="wf-text">
+          <h4>Reuse visuals across products, posts, and pages</h4>
+          <p>Use the same images and videos anywhere on your site to save time, keep branding consistent, and avoid duplicate uploads.</p>
+        </div>
+      </div>
+      <div class="workflow-feature-item">
+        <div class="wf-icon-wrap">
+          <div class="wf-icon-circle outline"></div>
+          <div class="wf-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0E0E0F" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.94 1.95C5.12 20 12 20 12 20s6.88 0 8.6-.47a2.78 2.78 0 0 0 1.94-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#0E0E0F" stroke="none"/></svg>
+          </div>
+        </div>
+        <div class="wf-text">
+          <h4>Show YouTube or self-hosted videos on product pages</h4>
+          <p>Embed YouTube links or upload your own videos to showcase demos, tutorials, and reviews.</p>
+        </div>
+      </div>
+      <div class="workflow-feature-item">
+        <div class="wf-icon-wrap">
+          <div class="wf-icon-circle outline"></div>
+          <div class="wf-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0E0E0F" stroke-width="1.5"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46A2 2 0 0 0 2 5.5V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5.5a2 2 0 0 0-1.62-2.04z"/></svg>
+          </div>
+        </div>
+        <div class="wf-text">
+          <h4>Generate short product videos using AI</h4>
+          <p>Create AI-generated short videos that show your products in action without a studio setup.</p>
+        </div>
+      </div>
+      <div class="workflow-feature-item">
+        <div class="wf-icon-wrap">
+          <div class="wf-icon-circle outline"></div>
+          <div class="wf-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0E0E0F" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        </div>
+        <div class="wf-text">
+          <h4>Create featured images for blog posts</h4>
+          <p>Generate eye-catching featured images for blog posts to make your content more clickable and visually consistent.</p>
+        </div>
+      </div>
+      <div class="workflow-feature-item">
+        <div class="wf-icon-wrap">
+          <div class="wf-icon-circle outline"></div>
+          <div class="wf-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0E0E0F" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><rect x="6" y="6" width="12" height="12" rx="1"/></svg>
+          </div>
+        </div>
+        <div class="wf-text">
+          <h4>Generate or customize video thumbnails</h4>
+          <p>Create or edit video thumbnails to control first impressions and boost play rates with clear, high-impact visuals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ══ -->
+<section class="how-section">
+  <div class="section-heading" style="max-width:740px;">
+    <h2>How TryAura Works</h2>
+    <p>From product image to try-on in minutes.</p>
+  </div>
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-number-wrap">
+        <div class="step-circle"></div>
+        <span class="step-num">01</span>
+      </div>
+      <div class="step-text">
+        <h3>Choose a Product</h3>
+        <p>Choose an existing product from your WooCommerce store or upload a basic image.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-number-wrap">
+        <div class="step-circle"></div>
+        <span class="step-num">02</span>
+      </div>
+      <div class="step-text">
+        <h3>Generate Visuals</h3>
+        <p>Create studio-quality product images and short videos in a few clicks.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-number-wrap">
+        <div class="step-circle"></div>
+        <span class="step-num">03</span>
+      </div>
+      <div class="step-text">
+        <h3>Enable Virtual Try-On</h3>
+        <p>Turn on virtual try-on so shoppers can see how the product looks on them.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-number-wrap">
+        <div class="step-circle"></div>
+        <span class="step-num">04</span>
+      </div>
+      <div class="step-text">
+        <h3>Publish</h3>
+        <p>Add images, videos, and try-on directly to your product pages and start selling with confidence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BANNER ══ -->
+<section class="cta-banner">
+  <div class="cta-banner-inner">
+    <div class="cta-banner-text">
+      <h2>Transform Your WooCommerce Store with TryAura</h2>
+      <p>Join store owners who use AI to create unlimited, studio-quality visuals and interactive try-on experiences.</p>
+    </div>
+    <button class="btn-demo" style="height:auto;">Get Started Now</button>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="faq-section">
+  <div class="section-heading" style="max-width:852px;">
+    <h2>Have Questions?</h2>
+    <p style="max-width:432px;">Find answers to the most commonly asked questions by our users.</p>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-trigger" onclick="toggleFaq(this)">
+        <h3>What is TryAura and how does it work with WooCommerce?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <p class="faq-answer">TryAura is a WooCommerce plugin that lets you generate AI-powered product visuals and virtual try-on experiences directly from your store's product editor.</p>
+    </div>
+    <div class="faq-item open">
+      <div class="faq-trigger" onclick="toggleFaq(this)">
+        <h3>How does virtual try-on help increase conversions?</h3>
+        <div class="faq-icon minus"></div>
+      </div>
+      <p class="faq-answer" style="display:block;">Virtual try-on helps shoppers see how a product looks on them before buying. This improves product visualization, reduces hesitation, and helps customers make confident purchase decisions.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-trigger" onclick="toggleFaq(this)">
+        <h3>Do I need professional product images to use TryAura?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <p class="faq-answer">No — TryAura can work from basic product images and enhance them into professional-quality visuals.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-trigger" onclick="toggleFaq(this)">
+        <h3>Can I create both product images and videos with TryAura?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <p class="faq-answer">Yes — TryAura supports both studio-quality product images and short AI-generated product videos.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-trigger" onclick="toggleFaq(this)">
+        <h3>Is TryAura suitable for all types of WooCommerce stores?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <p class="faq-answer">TryAura is designed for any WooCommerce store selling physical products, especially clothing, accessories, and lifestyle items.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-trigger" onclick="toggleFaq(this)">
+        <h3>What does "Bring Your Own Key" mean?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <p class="faq-answer">It means you connect your own Google Gemini API key. This gives you full control over usage and eliminates per-image fees charged by other platforms.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-trigger" onclick="toggleFaq(this)">
+        <h3>Is the Free plan really unlimited?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <p class="faq-answer">Yes — with your own Gemini key, you can generate unlimited images and try-ons. You only pay Google's API rate, not TryAura per-generation fees.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-trigger" onclick="toggleFaq(this)">
+        <h3>Will TryAura slow down my WooCommerce store?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <p class="faq-answer">No — TryAura is built with performance in mind and only loads assets when needed, so it won't impact your store's page speed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STILL HAVE QUESTIONS ══ -->
+<section class="still-questions">
+  <div class="section-heading" style="max-width:740px;">
+    <h2>Still Have Questions?</h2>
+    <p style="max-width:586px;">Can't find the answer you're looking for? Our expert support team is ready to help.</p>
+  </div>
+  <button class="btn-demo" style="display:flex;align-items:center;gap:10px;">
+    Contact Us
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+      <path d="M4.58333 11H17.4167" stroke="#0E0E0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M11 4.58333L17.4167 11L11 17.4167" stroke="#0E0E0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-divider"></div>
+  <div class="footer-top">
+    <div class="footer-logo">
+      <img src="./src/img/tryaura-logo.svg" alt="TryAura Logo" class="logo-img">
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Coupons</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#">StoreGrowth</a></li>
+          <li><a href="#">CartPulse</a></li>
+          <li><a href="#">Conversion Tracking</a></li>
+          <li><a href="#">AI Image Enhancer</a></li>
+          <li><a href="#">AI Voice Agent</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Keep Updated</h4>
+        <div class="footer-social-icons">
+          <div class="social-icon">
+            <svg viewBox="0 0 24 24" fill="#333"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </div>
+          <div class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+          <div class="social-icon">
+            <svg viewBox="0 0 24 24" fill="#333"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- decorative wave -->
+  <div class="footer-wave" style="height:120px;background:linear-gradient(180deg,#faf8f4 0%,#ede8de 100%);position:relative;overflow:hidden;">
+    <svg style="position:absolute;bottom:0;width:100%;height:100%;" viewBox="0 0 1440 120" preserveAspectRatio="none" fill="none">
+      <path d="M0 80 Q360 20 720 80 Q1080 140 1440 80 L1440 120 L0 120 Z" fill="#f5f0e8"/>
+      <path d="M0 100 Q360 50 720 100 Q1080 150 1440 100 L1440 120 L0 120 Z" fill="#ede8de"/>
+    </svg>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-wedevs">
+      <span style="font-size:14px;color:var(--gray-small);">A</span>
+      <span style="font-size:16px;font-weight:600;color:#333;margin:0 4px;">weDevs</span>
+      <span style="font-size:14px;color:var(--gray-small);">Brand</span>
+    </div>
+    <p>Copyright © 2008-2025, weDevs Pte. Ltd. weDevs® is a registered trademark of weDevs Pte. Ltd.</p>
+    <div class="footer-hosted">
+      <p>Proudly hosted at</p>
+      <span style="font-size:16px;font-weight:600;color:#333;">FlyWP</span>
+    </div>
+  </div>
+</footer>
+
+<script src="./src/tryaura/js/main.js"></script>
+</body>
+</html>
